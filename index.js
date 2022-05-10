@@ -10,7 +10,7 @@ const options = {
 };
 
 axios.request(options).then(function (response) {
-	console.log(response.data);
+	response.data.print();
 }).catch(function (error) {
 	console.error(error);
 });
